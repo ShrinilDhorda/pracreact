@@ -72,7 +72,7 @@ const Sponav = () => {
                 </div>
                 <div className="mainbody relative bg-gradient-to-b from-[#0C142A] to-[#6378b3] w-full flex flex-col  h-screen ">
                     <div className="absolute h-1/2 bottom-10 bg-gradient-to-t w-full from-black z-0  to-transparent"></div>
-                    <div className="absolute top-0 text-gray-600 text-[10px] mt-3 text-center w-full ">this is spotify UI clone vreated by Shrinil Dhorda</div>
+                    <div className="absolute top-0 text-gray-600  text-[10px] mt-3 text-center w-full  ">this is spotify UI clone created by Shrinil Dhorda , best displayed on screens having width= 1440px</div>
                     <div className="nav px-6 py-5 flex justify-center items-center">
                         <div className="leftright flex space-x-4 flex-1 ">
                             <AiOutlineLeft className='w-8 h-8 p-1  cursor-pointer bg-gray-800  rounded-full text-white' />
