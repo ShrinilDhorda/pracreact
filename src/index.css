@@ -111,3 +111,17 @@ button:hover::after {
 .text {
     @apply text-gray-700;
 }
+
+.cont img {
+    transform-origin: center;
+    transform: perspective(800px) rotateY(20deg);
+    opacity: 0.5;
+    transition: 0.5s;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, #000f);
+}
+
+.cont img:hover {
+    transform: perspective(500px) rotateY(0deg);
+    opacity: 1;
+
+}

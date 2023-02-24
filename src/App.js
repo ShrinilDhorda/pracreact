@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import About from './About';
 import './App.css';
+import Prac from './Prac';
 // import Home from './Home';
 import Prac1 from './Prac1';
 import Spotify from './Spotify';
@@ -29,7 +30,11 @@ function App() {
       {/* <TailwindPrac /> */}
       <div className="h-screen">
 
-      <Spotify/>
+        <Spotify />
+      </div>
+      <div className="h-screen">
+
+        <Prac />
       </div>
       {/* <Prac1 /> */}
 
