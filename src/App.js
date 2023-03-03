@@ -5,6 +5,7 @@ import './App.css';
 import Prac from './Prac';
 // import Home from './Home';
 import Prac1 from './Prac1';
+import Prac2 from './Prac2';
 import Spotify from './Spotify';
 
 import TailwindPrac from './TailwindPrac';
@@ -28,13 +29,17 @@ function App() {
       {/* <TextForm heading='Enter the text to analyse' /> */}
       {/* <About /> */}
       {/* <TailwindPrac /> */}
-      <div className="h-screen">
+      {/* <div className="h-screen">
 
         <Spotify />
-      </div>
-      <div className="h-screen">
+      </div> */}
+      {/* <div className="h-screen">
 
         <Prac />
+      </div> */}
+      <div className="">
+
+        <Prac2 />
       </div>
       {/* <Prac1 /> */}
 
