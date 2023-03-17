@@ -28,7 +28,7 @@ function App() {
       {/* <Navbar title='hi' mode={darkMode} /> */}
       {/* <TextForm heading='Enter the text to analyse' /> */}
       {/* <About /> */}
-      {/* <TailwindPrac /> */}
+      <TailwindPrac />
       {/* <div className="h-screen">
 
         <Spotify />
@@ -37,10 +37,10 @@ function App() {
 
         <Prac />
       </div> */}
-      <div className="">
+      {/* <div className="">
 
         <Prac2 />
-      </div>
+      </div> */}
       {/* <Prac1 /> */}
 
       {/* this is the url path generated */}

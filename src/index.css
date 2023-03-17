@@ -91,13 +91,19 @@ button:hover::after {
 }
 
 .main {
-    clip-path: circle(20% at 100% 0);
-    transition: .4s ease-in-out;
+    clip-path: circle(40% at 100% 0);
+    /* clip-path: polygon(79% 5%, 22% 33%, 82% 48%, 13% 93%); */
+    /* clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 83% 50%); */
+    transition: 1s ease-in-out;
 
 }
 
 .main:hover {
     clip-path: circle(142% at 100% 0);
+    /* clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 83% 50%); */
+    /* clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%, 0 46%); */
+    /* clip-path: polygon(100% 0, 0 0, 0 100%); */
+
 }
 
 .items {

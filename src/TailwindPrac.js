@@ -23,11 +23,9 @@ function TailwindPrac() {
             <div><a href="./src/Spotify.js">Spotify</a></div>
             <div className="flex items-center justify-center ">
                 <div className="relative group">
-                    <img src="https://images.pexels.com/photos/15094640/pexels-photo-15094640.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load" alt="" className='rounded-md hover:opacity-80 transition-opacity duration-1000 ' />
+                    <img src="https://images.pexels.com/photos/15094640/pexels-photo-15094640.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load" alt="" className='rounded-md  ' />
                     <div className="absolute  text-justify bottom-0  
-                   group-hover:opacity-100 opacity-0 
-                   duration-1000 hover:duration-200
-                   transition-opacity origin-bottom
+                  
                    text-white/60 bg-black/30 py-4 px-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, molestias reprehenderit numquam veritatis animi corrupti itaque mollitia suscipit voluptatem earum minus? Facilis molestiae asperiores soluta aliquam iusto, blanditiis quisquam autem dignissimos accusamus deleniti!</div>
 
                 </div>
@@ -312,23 +310,38 @@ function TailwindPrac() {
                         </div>
                     </div>
                 </div>
-                <div className="flex  justify-center items-center">
-                    <ul>
-                        <li>
-                        </li>
-                        <li>
-
-                        </li>
-                        <li>
-                            home
-                        </li>
-                        <li>
-                            {/* <Link to='/about'>Ab</Link> */}
-                        </li>
-                        <li>
-                            home
-                        </li>
-                    </ul>
+                <div className="flex  justify-center items-center h-screen">
+                    <div class="flex justify-center space-x-2">
+                        <button
+                            type="button"
+                            data-te-ripple-init
+                            data-te-ripple-color="dark"
+                            className="inline-block rounded bg-primary px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] bg-black/30">
+                            Click me
+                        </button>
+                        {/* <!-- Required font awesome --> */}
+                        <div class="flex justify-center space-x-2">
+                            <div>
+                                <button
+                                    type="button"
+                                    data-te-ripple-init
+                                    data-te-ripple-color="light"
+                                    class="flex items-center rounded bg-primary px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:bg-primary-700 hover:shadow-lg focus:bg-primary-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-primary-800 active:shadow-lg">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24"
+                                        fill="currentColor"
+                                        class="mr-1 h-4 w-4">
+                                        <path
+                                            fill-rule="evenodd"
+                                            d="M19.5 21a3 3 0 003-3V9a3 3 0 00-3-3h-5.379a.75.75 0 01-.53-.22L11.47 3.66A2.25 2.25 0 009.879 3H4.5a3 3 0 00-3 3v12a3 3 0 003 3h15zm-6.75-10.5a.75.75 0 00-1.5 0v4.19l-1.72-1.72a.75.75 0 00-1.06 1.06l3 3a.75.75 0 001.06 0l3-3a.75.75 0 10-1.06-1.06l-1.72 1.72V10.5z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    Button
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
