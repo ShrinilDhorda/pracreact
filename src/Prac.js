@@ -1,6 +1,7 @@
-import React from 'react'
-import sea from './sea.jpg'
+import React, { useState } from 'react'
 const Prac = () => {
+   
+   
     return (
         <>
 
@@ -13,17 +14,9 @@ const Prac = () => {
                 </div>
             </div>
             <div className="h-screen">
-                <div className="relative">
-
-                    <div className="absolute px-10 py-7 " >
-                        <p className='text-white  text-7xl tracking-widest uppercase'>The</p>
-                        <p className='text-[140px]  text-white uppercase  tracking-widest '>Ocean</p>
-                    </div>
-                    <img src={sea} alt="" className='w-full h-screen  object-cover  ' />
-
-                </div>
+             
             </div>
-   
+
         </>
     )
 }

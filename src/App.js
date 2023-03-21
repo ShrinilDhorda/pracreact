@@ -28,15 +28,15 @@ function App() {
       {/* <Navbar title='hi' mode={darkMode} /> */}
       {/* <TextForm heading='Enter the text to analyse' /> */}
       {/* <About /> */}
-      <TailwindPrac />
+      {/* <TailwindPrac /> */}
       {/* <div className="h-screen">
 
         <Spotify />
       </div> */}
-      {/* <div className="h-screen">
+      <div className="h-screen">
 
         <Prac />
-      </div> */}
+      </div>
       {/* <div className="">
 
         <Prac2 />
