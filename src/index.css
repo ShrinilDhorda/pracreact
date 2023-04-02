@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-    @apply bg-gray-100
+    @apply bg-gray-100 overflow-x-hidden
 }
 
 @layer utilities {
@@ -44,12 +44,12 @@ body {
     }
 }
 
-button {
+/* button {
     text-transform: uppercase;
     letter-spacing: 8px;
     background-color: blue;
-}
-
+} */
+/* 
 button::before {
     content: '';
     position: absolute;
@@ -59,13 +59,13 @@ button::before {
     height: 40px;
     /* background-color: blue; */
 
-    /* inset: 0; */
-    transition: all 0.5s;
-    border-top: 4px solid red;
-    border-left: 4px solid red;
-}
+/* inset: 0; */
+/* transition: all 0.5s; */
+/* border-top: 4px solid red; */
+/* border-left: 4px solid red; */
+/* } */
 
-button::after {
+/* button::after {
     content: '';
     position: absolute;
     right: -10px;
@@ -74,21 +74,21 @@ button::after {
     height: 40px;
     /* background-color: blue; */
 
-    /* inset: 0; */
-    transition: all 0.5s;
+/* inset: 0; */
+/* transition: all 0.5s;
     border-bottom: 4px solid red;
-    border-right: 4px solid red;
-}
+    border-right: 4px solid red; */
+/* } */
 
-button:hover::before {
+/* button:hover::before {
     width: 100%;
     height: 100%;
 }
 
 button:hover::after {
     width: 100%;
-    height: 100%;
-}
+    height: 100%; */
+/* }  */
 
 .main {
     clip-path: circle(40% at 100% 0);
@@ -129,5 +129,47 @@ button:hover::after {
 .cont img:hover {
     transform: perspective(500px) rotateY(0deg);
     opacity: 1;
+
+}
+
+.crush {
+    letter-spacing: -10px;
+    /* border: 2px solid red; */
+    transition: 1s;
+}
+
+.crush:hover {
+    letter-spacing: 10px;
+    animation: borderr 2s infinite ease-in-out alternate-reverse;
+    transition: 1s ease-in-out;
+    padding: 10px;
+}
+
+@keyframes borderr {
+    from{
+        border: 2px solid red;
+        border-radius: 100px;
+    }
+    to{
+        border: 20px solid red;
+
+    }
+}
+
+
+.crush::before {
+    content: "";
+    position: absolute;
+    width: 20%;
+    /* border: 2px solid red; */
+
+}
+
+.crush::after {
+    content: "";
+    position: absolute;
+    width: 20%;
+    bottom: 0;
+    border: 2px solid red;
 
 }

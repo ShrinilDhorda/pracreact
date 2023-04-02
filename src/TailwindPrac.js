@@ -343,8 +343,12 @@ function TailwindPrac() {
                         </div>
                     </div>
                 </div>
+                <div className="h-screen flex justify-center items-center bg-gray-900">
+                    <div className="">
+                        <button className='text-purple-200 text-4xl   crush'>crush</button>
+                    </div>
+                </div>
             </div>
-
 
         </>
 
