@@ -146,11 +146,12 @@ button:hover::after {
 }
 
 @keyframes borderr {
-    from{
+    from {
         border: 2px solid red;
         border-radius: 100px;
     }
-    to{
+
+    to {
         border: 20px solid red;
 
     }
@@ -172,4 +173,181 @@ button:hover::after {
     bottom: 0;
     border: 2px solid red;
 
+}
+
+.grids {
+    display: grid;
+    grid-template-rows: repeat(2, 200px);
+    /* fr- fractional unit */
+    /* grid-template-columns: 1fr 1fr 1fr 1fr ; */
+    /* grid-template-columns: minmax(200px,250px) repeat(3, 1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    /* repeat 3 times -1fr */
+    /* border: 2px solid red; */
+    gap: 20px;
+    /* grid auto rows add 200px niche jitne bhi rows hoge */
+    grid-auto-rows: 200px;
+    /* text-align: center; */
+    /* align-items: center; */
+    /* justify-items: center; */
+
+    @apply p-10
+}
+
+.div2 {
+    /* 1/-1 , -1 means it will cover till end  */
+    /* grid-column: 1/ -1; */
+
+    /* grid-column: 1/ span 4; */
+}
+
+.div5 {
+    /* grid-row-start: 1;
+    grid-row-end:2 ; */
+    /* 1 pe start ,2 pe khatam */
+    /* grid-row: 1/2; */
+    /* grid-column-start: 2;
+    grid-column-end:5 ; */
+    /* grid-column: 2/5; */
+    color: aqua;
+
+}
+
+.grad {
+    animation: changebg 10s linear infinite alternate-reverse;
+}
+
+@keyframes changebg {
+
+    /* from{
+        background-color: red;
+    }
+    to{
+        background-color: yellow;
+    } */
+    0% {
+        background-color: red;
+    }
+
+    20% {
+        background-color: orange;
+    }
+
+    40% {
+        background-color: blue;
+    }
+
+    60% {
+        background-color: purple;
+    }
+
+    80% {
+        background-color: violet;
+    }
+
+    100% {
+        background-color: pink;
+    }
+}
+
+.unlist {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.unlist li {
+    padding: 8px 15px;
+    /* border: 2px solid yellow; */
+    margin: 0 20px;
+    position: relative;
+}
+
+.unlist li::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    border-top: 2px solid yellow;
+    border-left: 2px solid yellow;
+    transition: 1s;
+
+}
+
+.unlist li::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0%;
+    right: 0%;
+    border-bottom: 2px solid yellow;
+    border-right: 2px solid yellow;
+    transition: 1s;
+
+}
+
+.unlist li:hover:after,
+.unlist li:hover:before {
+    content: '';
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    transform: rotate(360deg);
+    transform-origin: left;
+    bottom: 0%;
+    right: 0%;
+    border-bottom: 2px solid yellow;
+    border-right: 2px solid yellow;
+
+}
+
+.dropdown {
+    color: rgb(241, 216, 185);
+    font-size: 2rem;
+    /* border: 1px solid rgb(241, 216, 185); */
+    border-radius: 30px;
+    padding: 1rem 2.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.dropdown::after {
+    position: absolute;
+    content: '>';
+    transform: rotate(90deg);
+    right: 0.3rem;
+    top: 25%;
+    /* border: 2px solid; */
+    color: rgb(241, 216, 185);
+}
+
+.dropdown:hover {
+    background-color: rgb(39, 36, 32);
+}
+
+.itemss {
+    color: #09111a;
+    font-size: 1.5rem;
+    border-radius: 10%;
+    padding: 1rem 2.4rem;
+    background-color: rgb(241, 216, 185);
+    /* translate: 0px -50px; */
+    /* display: none; */
+
+}
+.dropdown:active{
+    border: 2px solid salmon;
+}
+.dropdown:focus{
+    border: 2px solid salmon;
+}
+.item {
+    cursor: pointer;
 }

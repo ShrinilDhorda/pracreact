@@ -348,6 +348,60 @@ function TailwindPrac() {
                         <button className='text-purple-200 text-4xl   crush'>crush</button>
                     </div>
                 </div>
+
+                {/* gridss */}
+                <div className="grids  h-screen">
+                    <div className="div1 bg-red-300">1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem dolorum quae</div>
+                    <div className="div2 bg-yellow-500">2</div>
+                    <div className="div3 bg-green-400">3</div>
+                    <div className="div4 bg-violet-300">4</div>
+                    <div className="div5 bg-blue-800">5</div>
+                    <div className="div6 bg-orange-400">6</div>
+                    <div className="div7 bg-cyan-500">7</div>
+                    <div className="div8 bg-fuchsia-400">8</div>
+
+                </div>
+
+                {/* css prac  */}
+                <div className="h-screen text-6xl flex justify-center grad items-center">
+                    <p>
+
+                        Shrinil Dhorda
+                    </p>
+
+                </div>
+                <div className="h-screen  flex justify-center bg-[#19171f]  items-center text-yellow-300 space-x-10 text-3xl ">
+                    {/* <div className="border-2 border-yellow-300 p-2">Home</div>
+                <div className="border-2 border-yellow-300 p-2">About</div>
+                <div className="border-2 border-yellow-300 p-2">Contact</div>
+                <div className="border-2 border-yellow-300 p-2">Create</div> */}
+                    <ul className='unlist   '>
+                        <li className='li1 '>Home
+                        </li>
+                        <li className='li1'>About
+                        </li>
+                        <li className='li1'>Contact
+                        </li>
+                        <li className='li1'>Services
+                        </li>
+                    </ul>
+                </div>
+
+
+
+                {/* dropdown */}
+
+                <div className="h-screen bg-[#09111a] flex flex-col justify-center items-center">
+                    <div className="dropdown">Shrinil Dhorda
+
+                    </div>
+                    <ul className='itemss'>
+                        <li className='item'>Profile</li>
+                        <li className='item'>Settings</li>
+                        <li className='item'>Logout</li>
+                    </ul>
+                </div>
+                
             </div>
 
         </>
