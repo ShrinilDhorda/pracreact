@@ -342,12 +342,136 @@ button:hover::after {
     /* display: none; */
 
 }
-.dropdown:active{
+
+.dropdown:active {
     border: 2px solid salmon;
 }
-.dropdown:focus{
+
+.dropdown:focus {
     border: 2px solid salmon;
 }
+
 .item {
     cursor: pointer;
+}
+
+
+/* crush btn start */
+.mainbody {
+    height: 100vh;
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.crushbtn {
+    font-size: 2rem;
+    overflow: hidden;
+    letter-spacing: .3rem;
+    border-radius: 1.5rem;
+    padding: 0.7rem 2.4rem;
+    text-shadow: 0 0 3px #ff6e6e;
+    transition: 0.7s;
+    position: relative;
+    color: red;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.heart1 svg {
+    position: absolute;
+    left: 4.5rem;
+    top: 1.8rem;
+    opacity: 0;
+    z-index: -1;
+    fill: red;
+    stroke: none;
+    transition: 0.7s;
+    width: 2rem;
+    height: 2rem;
+    animation: move1 4s ease-in-out infinite alternate-reverse;
+}
+
+
+
+.heart2 svg {
+    position: absolute;
+    left: 1rem;
+    opacity: 0;
+    top: 0.3rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: red;
+    stroke: none;
+    animation: move2 5s ease infinite alternate-reverse;
+
+}
+
+.heart3 svg {
+    position: absolute;
+    right: 1rem;
+    top: 0.5rem;
+    opacity: 0;
+    width: 1.4rem;
+    height: 1.4rem;
+    fill: red;
+    stroke: none;
+    z-index: -1;
+    animation: move3 5s ease infinite alternate-reverse;
+}
+
+@keyframes move1 {
+    0% {
+        top: 2.8rem;
+    }
+
+    50% {
+        top: 4rem;
+    }
+
+    100% {
+        top: 2.8rem;
+    }
+}
+
+@keyframes move2 {
+    0% {
+        top: 0.3rem;
+    }
+
+    50% {
+        top: 1.5rem;
+    }
+
+    100% {
+        top: 0.3rem;
+    }
+}
+
+@keyframes move3 {
+    0% {
+        top: 0.5rem;
+    }
+
+    50% {
+        top: 1.6rem;
+    }
+
+    100% {
+        top: 0.5rem;
+    }
+}
+
+.crushbtn:hover .heart1 svg,
+.crushbtn:hover .heart2 svg,
+.crushbtn:hover .heart3 svg {
+    opacity: 1;
+    filter: drop-shadow(0 0 10px #ff6e6e)
+}
+
+.crushbtn:hover {
+    color: red;
+    box-shadow: 0 0 10px inset #ff6e6e;
+    scale: 105%;
 }
