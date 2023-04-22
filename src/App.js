@@ -9,6 +9,7 @@ import Prac2 from './Prac2';
 import Spotify from './Spotify';
 
 import TailwindPrac from './TailwindPrac';
+import ImageG from './ImageG';
 {/* props kya hai-properties hai ..... */ }
 function App() {
   // const name = 'Shrinil'
@@ -28,11 +29,15 @@ function App() {
       {/* <Navbar title='hi' mode={darkMode} /> */}
       {/* <TextForm heading='Enter the text to analyse' /> */}
       {/* <About /> */}
-      <TailwindPrac />
+      {/* <TailwindPrac /> */}
       {/* <div className="h-screen">
 
         <Spotify />
       </div> */}
+      <div className="">
+
+        <ImageG />
+      </div>
       {/* <div className="h-screen"> */}
 
         {/* <Prac /> */}
