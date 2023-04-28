@@ -1,7 +1,17 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 const Usestate = () => {
     const [count, setCount] = useState(0)
+    const [wcount, setWcount] = useState(window.screen.width)
+    const currsw = () => {
+        setWcount(() => window.innerWidth)
+    }
+    useEffect(() => {
+        window.addEventListener('resize', currsw)
+        return () => {
+            window.removeEventListener('resize', currsw)
+        }
+    })
     const [formdata, setFormdata] = useState({
         name: '',
         mail: '',
@@ -20,6 +30,16 @@ const Usestate = () => {
             // to preserve other data fields if not field ....
         })
     }
+
+
+
+    // useEffect(()=>{},[])
+    // callback func , array dependency (optional)
+    useEffect(() => {
+        document.title = count
+        //runs only first render when empty array arg is there
+
+    }, [count])
     return (
         <>
 
@@ -60,6 +80,7 @@ const Usestate = () => {
                 </div>
                 <p className='text-gray-500 text-lg mt-5'>{`My name is ${formdata.name} and my email is ${formdata.mail}`}</p>
             </div>
+            <div className="h-screen bg-black w-full text-center text-white flex justify-center items-center text-4xl ">The size of the window is {wcount}px   </div>
         </>
 
     )
