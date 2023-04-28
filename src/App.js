@@ -10,6 +10,7 @@ import Spotify from './Spotify';
 
 import TailwindPrac from './TailwindPrac';
 import ImageG from './ImageG';
+import Usestate from './Usestate';
 {/* props kya hai-properties hai ..... */ }
 function App() {
   // const name = 'Shrinil'
@@ -34,13 +35,13 @@ function App() {
 
         <Spotify />
       </div> */}
-      <div className="">
+      <div className="h-screen">
 
-        <ImageG />
+        <Usestate />
       </div>
       {/* <div className="h-screen"> */}
 
-        {/* <Prac /> */}
+      {/* <Prac /> */}
       {/* </div> */}
       {/* <div className="">
 
