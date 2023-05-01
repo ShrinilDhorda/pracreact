@@ -504,3 +504,6 @@ button:hover::after {
     /* border: 2px solid red; */
     /* background-attachment: local; */
 }
+.fimg{
+    @apply w-1/3 h-3/4 object-cover rounded-2xl shadow-2xl cursor-pointer hover:w-full transition-all duration-500 ease-in-out
+}

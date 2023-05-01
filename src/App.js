@@ -11,6 +11,7 @@ import Spotify from './Spotify';
 import TailwindPrac from './TailwindPrac';
 import ImageG from './ImageG';
 import Usestate from './Usestate';
+import PracA from './PracA';
 {/* props kya hai-properties hai ..... */ }
 function App() {
   // const name = 'Shrinil'
@@ -35,9 +36,13 @@ function App() {
 
         <Spotify />
       </div> */}
-      <div className="h-screen">
+      {/* <div className="h-screen">
 
         <Usestate />
+      </div> */}
+      <div className="">
+
+        <PracA />
       </div>
       {/* <div className="h-screen"> */}
 
