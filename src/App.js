@@ -13,6 +13,8 @@ import ImageG from './ImageG';
 import Usestate from './Usestate';
 import PracA from './PracA';
 import Parallax1 from './Parallax1';
+import NewGallery from './NewGallery';
+import ThreeDGallery from './ThreeDGallery';
 {/* props kya hai-properties hai ..... */ }
 function App() {
   // const name = 'Shrinil'
@@ -46,7 +48,9 @@ function App() {
         <PracA />
       </div> */}
 
-      <Parallax1 />
+      {/* <Parallax1 /> */}
+      {/* <NewGallery /> */}
+      <ThreeDGallery />
       {/* <div className="h-screen"> */}
 
       {/* <Prac /> */}
