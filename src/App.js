@@ -12,6 +12,7 @@ import TailwindPrac from './TailwindPrac';
 import ImageG from './ImageG';
 import Usestate from './Usestate';
 import PracA from './PracA';
+import Parallax1 from './Parallax1';
 {/* props kya hai-properties hai ..... */ }
 function App() {
   // const name = 'Shrinil'
@@ -40,10 +41,12 @@ function App() {
 
         <Usestate />
       </div> */}
-      <div className="">
+      {/* <div className="">
 
         <PracA />
-      </div>
+      </div> */}
+
+      <Parallax1 />
       {/* <div className="h-screen"> */}
 
       {/* <Prac /> */}
