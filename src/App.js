@@ -15,6 +15,7 @@ import PracA from './PracA';
 import Parallax1 from './Parallax1';
 import NewGallery from './NewGallery';
 import ThreeDGallery from './ThreeDGallery';
+import Navv from './Navv';
 {/* props kya hai-properties hai ..... */ }
 function App() {
   // const name = 'Shrinil'
@@ -50,7 +51,8 @@ function App() {
 
       {/* <Parallax1 /> */}
       {/* <NewGallery /> */}
-      <ThreeDGallery />
+      {/* <ThreeDGallery /> */}
+      <Navv />
       {/* <div className="h-screen"> */}
 
       {/* <Prac /> */}
